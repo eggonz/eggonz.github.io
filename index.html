@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Egoitz Gonzalez</title>
+        <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="min-h-screen flex flex-col bg-gray-100 items-center">
+            <!-- Header -->
+            <div class="navbar px-4 py-2 flex flex-row justify-between items-center bg-white">
+                <div class="py-2">
+                    <a href=""><h1 class="text-2xl font-semibold">Egoitz Gonzalez</h1></a>
+                </div>
+                <div class="py-2 flex flex-row">
+                    <!--<a href="#about" class="mr-4">About</a>
+                    <a href="#experience" class="mr-4">Experience</a>
+                    <a href="#projects" class="mr-4">Projects</a>-->
+                    <button id="toggle-button" class="mr-4 toggle-button btn"><i class="fa fa-bars"></i></button>
+                </div>
+            </div>
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <ul class="sidebar-menu">
+                    <li><a href="#about" class="mr-4">About me</a></li>
+                    <li><a href="#education" class="mr-4">Education</a></li>
+                    <li><a href="#experience" class="mr-4">Experience</a></li>
+                    <li><a href="#projects" class="mr-4">Projects</a></li>
+                    <li><a href="https://github.com/eggonz" class="btn text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-2 py-1 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"><i class="fa fa-github"></i>&thinsp; GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/eggonz/" class="btn text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-2 py-1 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"><i class="fa fa-linkedin"></i>&thinsp; LinkedIn</a></li>
+                </ul>
+            </div>
+            <script src="js/script.js"></script>
+            <!-- Content -->
+            <div class="main w-3/4 p-4 flex flex-col text-justify bg-gray-100">
+                <div id="about" class="anchor">
+                    <div id="profile-pic" class="p-4">
+                        <img src="docs/profile.png" alt="profile image">
+                    </div>
+                    <div id="intro">
+                        <h2 class="text-2xl">About me</h2>
+                        <p>
+                            Hi there, I'm Egoitz.
+                            I am currently pursuing my Master's degree in <b>Artificial Intelligence</b> at the University of Amsterdam.
+                            Prior to this, I obtained a double Bachelor's degree in <b>Physics</b> and <b>Electronic Engineering</b>, which equipped me with a solid foundation in math and programming.
+                            During my undergraduate studies, I developed a growing interest in AI and DL and decided to pursue a career in this field.
+                        </p>
+                        <p>
+                            My main areas of interest are <b>Deep Learning</b>, <b>Computer Vision</b> and <b>Reinforcement Learning</b>, and I like to explore new ways to enhance my skills and knowledge in these fields.
+                            I have hands-on experience in <b>Python</b> and frameworks such as <b>torch</b> and <b>keras</b>, and I enjoy coding and experimenting with different AI models.
+                            Overall, I am motivated to contribute to the development of innovative AI solutions, while continuing to learn.
+                        </p>
+                        <p class="mt-2 flex justify-end">
+                            <a href="https://github.com/eggonz" class="btn text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-2 py-1 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"><i class="fa fa-github"></i>&thinsp; GitHub</a>
+                            <a href="https://www.linkedin.com/in/eggonz/" class="btn text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-2 py-1 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"><i class="fa fa-linkedin"></i>&thinsp; LinkedIn</a>
+                        </p>
+                    </div>
+                </div>
+                <div id="education" class="anchor pt-6">
+                    <h2 class="text-2xl">Education</h2>
+                    <ul class="space-y-2">
+                        <li>
+                            <i class="fa fa-graduation-cap"></i>&thinsp; MSc AI <span style="color: #909090">@ UvA, Amsterdam, NL&emsp;2022</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-graduation-cap"></i>&thinsp; BSc Physics + Electronic Engineering <span style="color: #909090">@ EHU, Bilbo, ES&emsp;2016-2021</span>
+                        </li>
+                    </ul>
+                </div>
+                <div id="experience" class="anchor pt-6">
+                    <h2 class="text-2xl">Experience</h2>
+                    <ul class="space-y-2">
+                        <li>
+                            <i class="fa fa-suitcase"></i>&thinsp; Python Developer <span style="color: #909090">@ sherpa.ai, Bilbo, ES&emsp;2021-2022</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-suitcase"></i>&thinsp; Student Intern <span style="color: #909090">@ Cambrian Intelligence, ES&emsp;2021</span>
+                        </li>
+                    </ul>
+                </div>
+                <div id="projects" class="anchor pt-6">
+                    <h2 class="text-2xl">Projects</h2>
+                    <p>
+                        More public projects are available on <a href="https://github.com/eggonz" class="btn text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-2 py-1 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"><i class="fa fa-github"></i>&thinsp; GitHub</a>
+                    </p>
+                    <ul class="space-y-2">
+                        <li>
+                            <i class="fa fa-book"></i>&thinsp; DeeLeMMa &emsp;
+                            <a href="https://github.com/eggonz/deelemma" class="btn text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-2 py-1 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"><i class="fa fa-archive"></i>&thinsp; repo</a>
+                            <p>
+                                Simple toolkit to build modular deep learning models.
+                                It was built from scratch based on pytorch or keras interfaces.
+                                Through this project, I was able to gain practical knowledge and experience in implementing the fundamentals of DL models, as well as resolving unexpected issues that can arise during the coding and model training.
+                                It was developed as part of my final bachelor's degree project.
+                            </p>
+                        </li>
+                        <!--<li>
+                            <i class="fa fa-book"></i> The Legend of Tesla &emsp;
+                            <a href="https://eggonz.github.io/legend-tesla" class="btn text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-2 py-1 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"><i class="fa fa-desktop"></i>&thinsp; webpage</a>
+                            <p>
+                                Small fun java project. I created a small game from scratch. It allowed me to learn the fundamentals of simple games, and play around with Java, HTML+CSS.
+                            </p>
+                        </li>-->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+    
