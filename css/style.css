@@ -19,7 +19,7 @@ p a {
   color: #2bbcff;
 }
 
-ol {
+ol.clear {
     list-style: revert;
     list-style-position: inside;
 }
