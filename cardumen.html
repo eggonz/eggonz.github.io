@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cardumen</title>
+        <link rel="icon" type="image/gif" href="docs/goldfish.gif">
+        <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="min-h-screen flex flex-col bg-gray-100 items-center">
+            <!-- Header -->
+            <div class="navbar px-4 py-2 flex flex-row justify-between items-center bg-white">
+                <div class="py-2">
+                    <a href=""><h1 class="text-2xl font-semibold">Cardumen</h1></a>
+                </div>
+                <div class="py-2 flex flex-row">
+                    <a href="/" class="mr-4">Home</a>
+                    <!--<button id="toggle-button" class="mr-4 toggle-button btn"><i class="fa fa-bars"></i></button>-->
+                </div>
+            </div>
+            <!-- Sidebar -->
+            <!--
+            <div class="sidebar">
+                <ul class="sidebar-menu">
+                    <li><a href="#about" class="mr-4">About me</a></li>
+                    <li><a href="#education" class="mr-4">Education</a></li>
+                    <li><a href="#experience" class="mr-4">Experience</a></li>
+                    <li><a href="#projects" class="mr-4">Projects</a></li>
+                    <li><a href="https://github.com/eggonz" class="btn text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-2 py-1 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"><i class="fa fa-github"></i>&ensp;GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/eggonz/" class="btn text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-2 py-1 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"><i class="fa fa-linkedin"></i>&ensp;LinkedIn</a></li>
+                </ul>
+            </div>
+            <script src="js/script.js"></script>
+            -->
+            <!-- Content -->
+            <div class="main w-3/4 p-4 flex flex-col text-justify bg-gray-100">
+                <h1 class="text-4xl font-semibold">Cardumen</h1>
+                <div id="intro" class="anchor pt-6">
+                    <h2 class="text-2xl">Introduction and objective</h2>
+                    <p>
+                        This is a personal project to learn and experiment with some simple CV and RL methods.
+                        The aim of this project is to try to mimic the behaviour of <a href="https://en.wikipedia.org/wiki/Shoaling_and_schooling" target="_blank" rel="noopener noreferrer">schools and shoals</a> of fish, which are collectively known as <a href="https://es.wikipedia.org/wiki/Cardumen" target="_blank" rel="noopener noreferrer">'cardumen'</a> in Spanish.
+                        The results will be far from the real-world behaviour of fish, but it will be a good exercise to learn about the basics of RL and CV.
+                    </p>
+                    <p>
+                        Schooling and shoaling are collective behaviours exhibited by many species of fish, birds, and other animals.
+                        We say that a group of fish of the same species is <b>schooling</b> when they move in a coordinated manner.
+                        <b>Shoaling</b> is the generalization to grouping of multiple species, each of which may have its own behaviour.
+                        The objective is to try to reproduce some of the grouping behaviour modelling the fish as agents in a multi-agent system.
+                        Different species may have different rewards or weights depending on their states and actions.
+                        Furthermore, other species will be added to the environment to try to simulate the behaviour of the fish in the presence of <b>predators</b>.
+                        These predators will be agents that will try to eat the fish and serve as negative reinforcement for the fish.
+                    </p>
+                    <div id="button-bucket" class="mt-2 flex justify-end">
+                        <a href="https://github.com/eggonz/cardumen" class="btn text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-2 py-1 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800" target="_blank" rel="noopener noreferrer"><i class="fa fa-code-fork"></i>&thinsp; repo</a>
+                    </div>
+                </div>
+                <div id="procedure" class="anchor pt-6">
+                    <h2 class="text-2xl">Procedure</h2>
+                    <p>The procedure will be as follows:</p>
+                    <ol type="1">
+                        <li>Build a mini-game environment to simulate the behaviour of fish, including scene rendering and shape colliders.</li>
+                        <li>Implement a simple CV algorithm to detect the presence of other fish in the environment, using previous colliders.</li>
+                        <li>Implement a simple RL algorithm to control the behaviour of the fish.</li>
+                        <li>Define some metrics for the fish grouping and evaluate their behaviour.</li>
+                        <li>Include predators in the scene.</li>
+                        <li>Include different fish species.</li>
+                    </ol>
+                </div>
+                <div id="media" class="anchor pt-6">
+                    <h2 class="text-2xl">Media</h2>
+                    <p>Here you can see some teasers and several pictures of the development process:</p>
+
+                    <ul class="clear">
+                        <li>Detection of another fish within the view range of the fish.
+                            <div class="grid grid-cols-3 gap-4 media-grid">
+                                <div class="border border-black">
+                                    <img src="docs/2023-03-30_12-18.png">
+                                </div>
+                                <div class="border border-black">
+                                    <img src="docs/2023-03-30_12-18_collision.png">
+                                </div>
+                            </div>
+                        </li>
+                        <li>Projection of the fish view trapezoid into a square.
+                            <div class="grid grid-cols-3 gap-4 media-grid">
+                                <div class="border border-black">
+                                    <img src="docs/2023-03-30_22-08.png">
+                                </div>
+                                <div class="border border-black">
+                                    <img src="docs/2023-03-30_22-08_collision.png">
+                                </div>
+                                <div class="border border-black">
+                                    <img src="docs/2023-03-30_22-08_collision_warp.png">
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="h-16"></div>
+            </div>
+
+            <!-- Footer -->
+            <div><img src="docs/wip.png" class="wip-img"></div>
+        </div>
+    </body>
+</html>
+    

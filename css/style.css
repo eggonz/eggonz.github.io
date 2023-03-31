@@ -15,6 +15,24 @@
   box-shadow: none;
 }
 
+p a {
+  color: #2bbcff;
+}
+
+ol {
+    list-style: revert;
+    list-style-position: inside;
+}
+
+ul.clear {
+    list-style: revert;
+    list-style-position: inside;
+}
+
+h1 {
+  text-align: center;
+}
+
 /* 'about' arrangement */
 
 #about {
@@ -35,6 +53,17 @@
   display: block;
   flex: 1;
   margin-top: 20px;
+}
+
+.media-grid {
+    padding: 20px;
+    max-width: 700px;
+}
+.wip-img {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  width: 150px;
 }
 
 @media screen and (max-width: 900px) {
@@ -58,7 +87,7 @@
 }
 
 /* space between paragraphs */
-.main div p:not(:last-child) {
+.main div p {
   margin-bottom: 1rem;
 }
 
