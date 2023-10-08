@@ -55,7 +55,7 @@ h1 {
 }
 #profile-pic:hover img {
     width: 280px;
-    border:7px solid #444444;
+    border:7px solid #082f49;
     transition: 0.3s ease-in-out;
 }
 
@@ -170,17 +170,6 @@ li p {
   }
 }
 
-/* show on hover */
-
-.hide {
-  display: none;
-}
-
-.myDIV:hover + .hide {
-  display: block;
-  color: red;
-}
-
 /* hovering */
 
 .highlightBox{ /*unhover*/
@@ -211,4 +200,53 @@ li p {
 .logoTrigger:hover .logoHidden {
     width: 15px;
     display: inline;
+}
+
+#miniproj-grid {
+    padding: 10px;
+    gap: 20px;
+}
+
+.grid-cell {
+    position: relative;
+    /* 150px->8cols; 100px->12cols */
+    width: 100px;
+    height: 100px;
+}
+
+.grid-cell img {
+    position: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 25%;
+}
+
+.grid-cell-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(3, 105, 161, 0.7);
+    border-radius: 25%;
+}
+
+.grid-cell:hover .grid-cell-overlay {
+    opacity: 1;
+}
+
+.grid-cell-text {
+    color: white;
+    font-size: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: trasnslate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
