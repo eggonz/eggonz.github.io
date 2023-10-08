@@ -173,31 +173,32 @@ li p {
 
 /* hovering */
 
-.highlightBox{ /*unhover*/
-  left:0;
-  transition: 0.5s ease-in-out;
-  position: relative;
+.highlightBox{
+    position: relative;
+    left: 0;
+    transition: 0.5s ease-in-out;
 }
 .highlightBox:hover {
-  transform: translateX(+20px);
-  transition: 0.5s ease-in-out;
+    transform: translateX(+20px);
+    transition: 0.5s ease-in-out;
 }
 
 .highlightSide {
-  position: absolute;
-  top:0;
-  height: 100%;
-  transition: 0.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    left: -19%;
+    transform: translateX(-100%);
+    transition: 0.5s ease-in-out;
 }
 .highlightBox:hover .highlightSide {
-  transform: translateX(+100%);
-  transition: 0.5s ease-in-out;
+    transform: translateX(0);
+    transition: 0.5s ease-in-out;
 }
 
 .logoHidden {
     display: none;
 }
-
 .logoTrigger:hover .logoHidden {
     width: 15px;
     display: inline;
