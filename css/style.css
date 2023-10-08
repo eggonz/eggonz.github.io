@@ -69,7 +69,7 @@ h1 {
     padding: 20px;
     max-width: 700px;
 }
-.wip-img {
+.static-footer-img {
   position: fixed;
   bottom: 50px;
   right: 50px;
@@ -106,17 +106,17 @@ h2 {
   padding-bottom: 10px;
 }
 
-#button-bucket {
+.button-bucket {
   padding: 5px;
 }
-#button-bucket a {
+.button-bucket a {
   margin-left: 5px;
   margin-right: 5px;
 }
-#button-bucket a:first-of-type {
+.button-bucket a:first-of-type {
   margin-left: 0;
 }
-#button-bucket a:last-of-type {
+.button-bucket a:last-of-type {
   margin-right: 0;
 }
 
@@ -251,4 +251,14 @@ li p {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
+}
+
+/*hover button that gets bigger*/
+.hover-button {
+    transform: scale(0.9);
+    transition: 0.3s ease;
+}
+.hover-button:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease;
 }
