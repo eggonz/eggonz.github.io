@@ -42,11 +42,21 @@ h1 {
 }
 
 #profile-pic { /*w-1/3 p-4*/
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin-right: 20px;
-  width: 300px;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-right: 20px;
+    width: 300px;
+}
+#profile-pic img {
+    margin:auto;
+    width: 280px;
+    transition: 0.3s ease-in-out;
+}
+#profile-pic:hover img {
+    width: 280px;
+    border:7px solid #444444;
+    transition: 0.3s ease-in-out;
 }
 
 #intro { /*w-2/3 pl-6*/
@@ -158,4 +168,47 @@ li p {
   to {
     opacity: 1;
   }
+}
+
+/* show on hover */
+
+.hide {
+  display: none;
+}
+
+.myDIV:hover + .hide {
+  display: block;
+  color: red;
+}
+
+/* hovering */
+
+.highlightBox{ /*unhover*/
+  left:0;
+  transition: 0.5s ease-in-out;
+  position: relative;
+}
+.highlightBox:hover {
+  transform: translateX(+20px);
+  transition: 0.5s ease-in-out;
+}
+
+.highlightSide {
+  position: absolute;
+  top:0;
+  height: 100%;
+  transition: 0.5s ease-in-out;
+}
+.highlightBox:hover .highlightSide {
+  transform: translateX(+100%);
+  transition: 0.5s ease-in-out;
+}
+
+.logoHidden {
+    display: none;
+}
+
+.logoTrigger:hover .logoHidden {
+    width: 15px;
+    display: inline;
 }

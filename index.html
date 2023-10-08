@@ -2,9 +2,10 @@
 <html>
     <head>
         <title>Egoitz Gonzalez</title>
-        <link rel="icon" type="image/x-icon" href="docs/turtle.ico">
+        <link rel="icon" type="image/x-icon" href="assets/turtle.ico">
         <script src="https://cdn.tailwindcss.com"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--https://fontawesome.com/v4/icons/-->
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
@@ -32,13 +33,15 @@
                     <li><a href="https://www.linkedin.com/in/eggonz/" class="btn text-white bg-sky-700 hover:bg-sky-800 focus:ring-4 focus:ring-sky-300 font-medium rounded-lg text-sm px-2 py-1 mr-2 mb-2 dark:bg-sky-600 dark:hover:bg-sky-700 focus:outline-none dark:focus:ring-sky-800" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin"></i>&ensp;LinkedIn</a></li>
                 </ul>
             </div>
-            <script src="js/script.js"></script>
+            <script src="js/sidebar.js"></script>
             <!-- Content -->
             <div class="main w-3/4 p-4 flex flex-col text-justify bg-gray-100">
                 <h1 class="text-4xl font-semibold py-4">Egoitz Gonzalez</h1>
                 <div id="about" class="anchor">
                     <div id="profile-pic" class="p-4">
-                        <img src="docs/profile.png" alt="profile image">
+                        <div class="inset-shadow">
+                            <img src="assets/profile.png" alt="profile image">
+                        </div>
                     </div>
                     <div id="intro">
                         <h2 class="text-2xl">About me</h2>
@@ -63,16 +66,19 @@
                     <h2 class="text-2xl">Education</h2>
                     <ul class="space-y-2">
                         <li>
-                            <i class="fa fa-graduation-cap"></i>&thinsp; MSc AI <span style="color: #909090">@ UvA, Amsterdam, NL&emsp;2022-2024</span>
+                            <div class="logoTrigger"><i class="fa fa-graduation-cap"></i>&thinsp; MSc AI <span style="color: #909090">@ UvA, Amsterdam, NL&emsp;2022-2024</span> <img src="assets/uva_logo.png" alt="uva logo" class="logoHidden"></div>
                         </li>
                         <li>
-                            <i class="fa fa-graduation-cap"></i>&thinsp; BSc Physics + Electronic Engineering <span style="color: #909090">@ EHU, Bilbao, ES&emsp;2016-2021</span>
+                            <div class="logoTrigger"><i class="fa fa-graduation-cap"></i>&thinsp; BSc Physics + Electronic Engineering <span style="color: #909090">@ EHU, Bilbao, ES&emsp;2016-2021</span> <img src="assets/ehu_logo.png" alt="ehu logo" class="logoHidden"></div>
                         </li>
                     </ul>
                 </div>
                 <div id="experience" class="anchor pt-6">
                     <h2 class="text-2xl">Experience</h2>
                     <ul class="space-y-2">
+                        <li>
+                            <i class="fa fa-suitcase"></i>&thinsp; Teaching Assistant <span style="color: #909090">@ UvA, Amsterdam, NL&emsp;2023</span>
+                        </li>
                         <li>
                             <i class="fa fa-suitcase"></i>&thinsp; Python Developer <span style="color: #909090">@ sherpa.ai, Bilbao, ES&emsp;2021-2022</span>
                         </li>
@@ -89,23 +95,63 @@
                         </p>
                         <ul class="space-y-2">
                             <li>
-                                <i class="fa fa-book"></i>&thinsp; DeeLeMMa &emsp;
-                                <a href="https://github.com/eggonz/deelemma" class="btn text-white bg-sky-700 hover:bg-sky-800 focus:ring-4 focus:ring-sky-300 font-medium rounded-lg text-sm px-2 py-1 mr-2 mb-2 dark:bg-sky-600 dark:hover:bg-sky-700 focus:outline-none dark:focus:ring-sky-800" target="_blank" rel="noopener noreferrer"><i class="fa fa-code-fork"></i>&thinsp; repo</a>
-                                <p>
-                                    Simple toolkit to build modular deep learning models.
-                                    It was built from scratch based on pytorch or keras interfaces.
-                                    Through this project, I was able to gain practical knowledge and experience in implementing the fundamentals of DL models, as well as resolving unexpected issues that can arise during the coding and model training.
-                                    It was developed as part of my final bachelor's degree project.
-                                </p>
+                                <div class="highlightBox logoTrigger">
+                                    <img src="assets/preview_bagel.png" alt="bagel preview" class="highlightSide">
+                                    <i class="fa fa-book"></i>&thinsp; <b>Uncracking the Bagel</b> &emsp;
+                                    <a href="https://github.com/eggonz/uncracking-the-bagel" class="btn text-white bg-sky-700 hover:bg-sky-800 focus:ring-4 focus:ring-sky-300 font-medium rounded-lg text-sm px-2 py-1 mr-2 mb-2 dark:bg-sky-600 dark:hover:bg-sky-700 focus:outline-none dark:focus:ring-sky-800" target="_blank" rel="noopener noreferrer"><i class="fa fa-code-fork"></i>&thinsp; repo</a>
+                                    <a href="https://github.com/eggonz/uncracking-the-bagel/blob/main/docs/report.pdf" class="btn text-white bg-sky-700 hover:bg-sky-800 focus:ring-4 focus:ring-sky-300 font-medium rounded-lg text-sm px-2 py-1 mr-2 mb-2 dark:bg-sky-600 dark:hover:bg-sky-700 focus:outline-none dark:focus:ring-sky-800" target="_blank" rel="noopener noreferrer"><i class="fa fa-file-text-o"></i>&thinsp; report</a>
+                                    <a href="https://github.com/eggonz/uncracking-the-bagel/blob/main/docs/poster.pdf" class="btn text-white bg-sky-700 hover:bg-sky-800 focus:ring-4 focus:ring-sky-300 font-medium rounded-lg text-sm px-2 py-1 mr-2 mb-2 dark:bg-sky-600 dark:hover:bg-sky-700 focus:outline-none dark:focus:ring-sky-800" target="_blank" rel="noopener noreferrer"><i class="fa fa-picture-o"></i>&thinsp; poster</a>
+                                    <img src="assets/uva_logo.png" alt="uva logo" class="logoHidden">
+                                    <p>
+                                        Anomaly detection on 3D point cloud data using point-voxel diffusion.
+                                        We use denoising diffusion models to learn the distribution of healthy data, i.e. learning to generate samples without anomalies.
+                                        Then, given an anomalous sample, we apply some steps of noise to the point cloud data and reconstruct its healthy version using the diffusion model.
+                                        Taking the difference between the original anomalous sample and the reconstructed healthy sample we can detect the anomalies.
+                                        This project is part of my master's degree in AI.
+                                    </p>
+                                </div>
                             </li>
                             <li>
-                                <i class="fa fa-book"></i>&thinsp; Cardumen &emsp;
-                                <a href="/cardumen" class="btn text-white bg-sky-700 hover:bg-sky-800 focus:ring-4 focus:ring-sky-300 font-medium rounded-lg text-sm px-2 py-1 mr-2 mb-2 dark:bg-sky-600 dark:hover:bg-sky-700 focus:outline-none dark:focus:ring-sky-800"><i class="fa fa-link"></i>&thinsp; page</a>
-                                <a href="https://github.com/eggonz/cardumen" class="btn text-white bg-sky-700 hover:bg-sky-800 focus:ring-4 focus:ring-sky-300 font-medium rounded-lg text-sm px-2 py-1 mr-2 mb-2 dark:bg-sky-600 dark:hover:bg-sky-700 focus:outline-none dark:focus:ring-sky-800" target="_blank" rel="noopener noreferrer"><i class="fa fa-code-fork"></i>&thinsp; repo</a>
-                                <p>
-                                    Simple environment to simulate fish behaviour.
-                                    It functions as a testing playground for a diverse range of experiments, including utilizing projective geometry for object detection, as well as training and evaluating reinforcement learning agents with inputs from multiple sources.
-                                </p>
+                                <div class="highlightBox logoTrigger">
+                                    <img src="assets/vaevdm_preview.png" alt="vae-vdm preview" class="highlightSide">
+                                    <i class="fa fa-book"></i>&thinsp; <b>VAE-VDM</b> &emsp;
+                                    <a href="https://github.com/eggonz/VAE-VDM" class="btn text-white bg-sky-700 hover:bg-sky-800 focus:ring-4 focus:ring-sky-300 font-medium rounded-lg text-sm px-2 py-1 mr-2 mb-2 dark:bg-sky-600 dark:hover:bg-sky-700 focus:outline-none dark:focus:ring-sky-800" target="_blank" rel="noopener noreferrer"><i class="fa fa-code-fork"></i>&thinsp; repo</a>
+                                    <a href="https://github.com/eggonz/VAE-VDM/blob/main/blogpost.md" class="btn text-white bg-sky-700 hover:bg-sky-800 focus:ring-4 focus:ring-sky-300 font-medium rounded-lg text-sm px-2 py-1 mr-2 mb-2 dark:bg-sky-600 dark:hover:bg-sky-700 focus:outline-none dark:focus:ring-sky-800" target="_blank" rel="noopener noreferrer"><i class="fa fa-pencil-square-o"></i>&thinsp; blogpost</a>
+                                    <a href="https://github.com/eggonz/VAE-VDM/blob/main/Supplement.pdf" class="btn text-white bg-sky-700 hover:bg-sky-800 focus:ring-4 focus:ring-sky-300 font-medium rounded-lg text-sm px-2 py-1 mr-2 mb-2 dark:bg-sky-600 dark:hover:bg-sky-700 focus:outline-none dark:focus:ring-sky-800" target="_blank" rel="noopener noreferrer"><i class="fa fa-file-text-o"></i>&thinsp; supplement</a>
+                                    <a href="https://github.com/eggonz/VAE-VDM/blob/main/poster.pdf" class="btn text-white bg-sky-700 hover:bg-sky-800 focus:ring-4 focus:ring-sky-300 font-medium rounded-lg text-sm px-2 py-1 mr-2 mb-2 dark:bg-sky-600 dark:hover:bg-sky-700 focus:outline-none dark:focus:ring-sky-800" target="_blank" rel="noopener noreferrer"><i class="fa fa-picture-o"></i>&thinsp; poster</a>
+                                    <img src="assets/uva_logo.png" alt="uva logo" class="logoHidden">
+                                    <p>
+                                        We explore representation learning using probabilistic diffusion models.
+                                        We use an architecture for variational autoencoders that uses a variational diffusion model (VDM) as the decoder and a custom CNN as the encoder.
+                                        We train the VDM conditioned on a latent representation learned by the encoder and analyze to what extent the encoder is able to learn meaningful representations in the latent space.
+                                        This project is part of my master's degree in AI.
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="highlightBox logoTrigger">
+                                    <i class="fa fa-book"></i>&thinsp; <b>DeeLeMMa</b> &emsp;
+                                    <a href="https://github.com/eggonz/deelemma" class="btn text-white bg-sky-700 hover:bg-sky-800 focus:ring-4 focus:ring-sky-300 font-medium rounded-lg text-sm px-2 py-1 mr-2 mb-2 dark:bg-sky-600 dark:hover:bg-sky-700 focus:outline-none dark:focus:ring-sky-800" target="_blank" rel="noopener noreferrer"><i class="fa fa-code-fork"></i>&thinsp; repo</a>
+                                    <img src="assets/ehu_logo.png" alt="ehu logo" class="logoHidden">
+                                    <p>
+                                        Simple toolkit to build modular deep learning models.
+                                        It was built from scratch based on pytorch or keras interfaces.
+                                        Through this project, I was able to gain practical knowledge and experience in implementing the fundamentals of DL models, as well as resolving unexpected issues that can arise during the coding and model training.
+                                        It was developed as part of my final bachelor's degree project.
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="highlightBox">
+                                    <img src="assets/cardumen_preview.png" alt="cardumen preview" class="highlightSide">
+                                    <i class="fa fa-book"></i>&thinsp; <b>Cardumen</b> &emsp;
+                                    <a href="/cardumen" class="btn text-white bg-sky-700 hover:bg-sky-800 focus:ring-4 focus:ring-sky-300 font-medium rounded-lg text-sm px-2 py-1 mr-2 mb-2 dark:bg-sky-600 dark:hover:bg-sky-700 focus:outline-none dark:focus:ring-sky-800"><i class="fa fa-link"></i>&thinsp; page</a>
+                                    <a href="https://github.com/eggonz/cardumen" class="btn text-white bg-sky-700 hover:bg-sky-800 focus:ring-4 focus:ring-sky-300 font-medium rounded-lg text-sm px-2 py-1 mr-2 mb-2 dark:bg-sky-600 dark:hover:bg-sky-700 focus:outline-none dark:focus:ring-sky-800" target="_blank" rel="noopener noreferrer"><i class="fa fa-code-fork"></i>&thinsp; repo</a>
+                                    <p>
+                                        Simple environment to simulate fish behaviour.
+                                        It functions as a testing playground for a diverse range of experiments, including utilizing projective geometry for object detection, as well as training and evaluating reinforcement learning agents with inputs from multiple sources.
+                                    </p>
+                                </div>
                             </li>
                             <!--<li>
                                 <i class="fa fa-book"></i> The Legend of Tesla &emsp;
@@ -115,6 +161,7 @@
                                 </p>
                             </li>-->
                         </ul>
+                        <script src="js/highlight.js"></script>
                     </div>
                 </div>
                 <div class="h-16"></div>
