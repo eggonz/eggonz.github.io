@@ -134,21 +134,31 @@ li p {
 /* sidebar menu */
 
 .sidebar {
-  position: fixed;
-  top: 4rem;
-  bottom: 0;
-  right: -200px;
-  width: 200px;
-  height: 100%;
-  background-color: #f0f0f0;
-  z-index: 999;
-  display: none;
+    position: fixed;
+    top: 4rem;
+    right: -200px;
+    width: 200px;
+    height: 100%;
+    background-color: #f0f0f0;
+    z-index: 999;
+    display: block;
+    transition: .5s ease;
 }
 
-.sidebar.open {
-  display: block;
-  right: 0;
-  transition: fadeIn 0.3s ease-in-out;
+.sidebar-trigger {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 4rem;
+    width: 5rem;
+}
+.sidebar-trigger:hover + .sidebar {
+    right: 0;
+    transition: .5s ease;
+}
+.sidebar:hover {
+    right: 0;
+    transition: .5s ease;
 }
 
 .sidebar-menu {
@@ -159,15 +169,6 @@ li p {
 
 .sidebar-menu li:not(:last-child) {
   margin-bottom: 20px;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 
 /* hovering */
