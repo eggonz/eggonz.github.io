@@ -4,9 +4,17 @@
   width: 100%; /* Full width */
   height: 4rem;
 }
+
 .main {
   margin-top: 4rem;
+  width: 85%;
 }
+@media only screen and (min-width: 768px) {
+  .main {
+    width: 75%;
+  }
+}
+
 .anchor {
   scroll-margin-top: 5rem;
 }
@@ -33,12 +41,22 @@ h1 {
   text-align: center;
 }
 
-/* 'about' arrangement */
+h2 {
+  margin-bottom: 5px;
+  padding-bottom: 10px;
+}
+
 
 #about {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+}
+
+#intro {
+  display: block;
+  flex: 1;
+  margin-top: 20px;
 }
 
 #profile-pic { /*w-1/3 p-4*/
@@ -50,30 +68,13 @@ h1 {
 }
 #profile-pic img {
     margin:auto;
+    border-radius: 50%;
     width: 280px;
     transition: 0.3s ease-in-out;
 }
 #profile-pic:hover img {
-    width: 280px;
-    border:7px solid #082f49;
+    border: 7px solid #082f49;
     transition: 0.3s ease-in-out;
-}
-
-#intro { /*w-2/3 pl-6*/
-  display: block;
-  flex: 1;
-  margin-top: 20px;
-}
-
-.media-grid {
-    padding: 20px;
-    max-width: 700px;
-}
-.static-footer-img {
-  position: fixed;
-  bottom: 50px;
-  right: 50px;
-  width: 150px;
 }
 
 @media screen and (max-width: 900px) {
@@ -91,20 +92,29 @@ h1 {
   }
 }
 
-/* crop profile pic */
-#profile-pic img {
-  border-radius: 50%;
+.media-grid {
+    padding: 20px;
+    max-width: 700px;
+}
+.static-footer-img {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 100px;
+}
+@media only screen and (min-width: 768px) {
+    .static-footer-img {
+        bottom: 50px;
+        right: 50px;
+        width: 150px;
+    }
 }
 
 /* space between paragraphs */
-.main div p {
-  margin-bottom: 1rem;
+p + p {
+  margin-top: 1rem;
 }
 
-h2 {
-  margin-bottom: 5px;
-  padding-bottom: 10px;
-}
 
 .button-bucket {
   padding: 5px;
@@ -123,6 +133,7 @@ h2 {
 /* avoid buttons cutting in linbreak */
 .btn {
   white-space: nowrap;
+  display: inline-block;
 }
 
 /* paragraphs in a list are indented */
@@ -186,7 +197,9 @@ li p {
 .highlightSide {
     position: absolute;
     top: 0;
-    height: 100%;
+    width: auto;
+    max-height: 100%;
+    max-width: 25%;
     left: -19%;
     transform: translateX(-100%);
     transition: 0.5s ease-in-out;
@@ -204,14 +217,8 @@ li p {
     display: inline;
 }
 
-#miniproj-grid {
-    padding: 10px;
-    gap: 20px;
-}
-
 .grid-cell {
     position: relative;
-    /* 150px->8cols; 100px->12cols */
     width: 100px;
     height: 100px;
 }
