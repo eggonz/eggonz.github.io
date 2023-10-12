@@ -33,12 +33,22 @@ h1 {
   text-align: center;
 }
 
-/* 'about' arrangement */
+h2 {
+  margin-bottom: 5px;
+  padding-bottom: 10px;
+}
+
 
 #about {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+}
+
+#intro {
+  display: block;
+  flex: 1;
+  margin-top: 20px;
 }
 
 #profile-pic { /*w-1/3 p-4*/
@@ -50,30 +60,13 @@ h1 {
 }
 #profile-pic img {
     margin:auto;
+    border-radius: 50%;
     width: 280px;
     transition: 0.3s ease-in-out;
 }
 #profile-pic:hover img {
-    width: 280px;
-    border:7px solid #082f49;
+    border: 7px solid #082f49;
     transition: 0.3s ease-in-out;
-}
-
-#intro { /*w-2/3 pl-6*/
-  display: block;
-  flex: 1;
-  margin-top: 20px;
-}
-
-.media-grid {
-    padding: 20px;
-    max-width: 700px;
-}
-.static-footer-img {
-  position: fixed;
-  bottom: 50px;
-  right: 50px;
-  width: 150px;
 }
 
 @media screen and (max-width: 900px) {
@@ -91,9 +84,15 @@ h1 {
   }
 }
 
-/* crop profile pic */
-#profile-pic img {
-  border-radius: 50%;
+.media-grid {
+    padding: 20px;
+    max-width: 700px;
+}
+.static-footer-img {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  width: 150px;
 }
 
 /* space between paragraphs */
@@ -101,10 +100,6 @@ p + p {
   margin-top: 1rem;
 }
 
-h2 {
-  margin-bottom: 5px;
-  padding-bottom: 10px;
-}
 
 .button-bucket {
   padding: 5px;
