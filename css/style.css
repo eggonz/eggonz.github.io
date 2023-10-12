@@ -206,14 +206,8 @@ li p {
     display: inline;
 }
 
-#miniproj-grid {
-    padding: 10px;
-    gap: 20px;
-}
-
 .grid-cell {
     position: relative;
-    /* 150px->8cols; 100px->12cols */
     width: 100px;
     height: 100px;
 }
