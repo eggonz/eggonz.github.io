@@ -186,7 +186,9 @@ li p {
 .highlightSide {
     position: absolute;
     top: 0;
-    height: 100%;
+    width: auto;
+    max-height: 100%;
+    max-width: 25%;
     left: -19%;
     transform: translateX(-100%);
     transition: 0.5s ease-in-out;
