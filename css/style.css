@@ -118,6 +118,7 @@ p + p {
 /* avoid buttons cutting in linbreak */
 .btn {
   white-space: nowrap;
+  display: inline-block;
 }
 
 /* paragraphs in a list are indented */
