@@ -4,9 +4,18 @@
   width: 100%; /* Full width */
   height: 4rem;
 }
+
 .main {
   margin-top: 4rem;
+  width: 85%;
 }
+
+@media only screen and (min-width: 768px) {
+  .main {
+    width: 75%;
+  }
+}
+
 .anchor {
   scroll-margin-top: 5rem;
 }
