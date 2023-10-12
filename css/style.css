@@ -97,8 +97,8 @@ h1 {
 }
 
 /* space between paragraphs */
-.main div p {
-  margin-bottom: 1rem;
+p + p {
+  margin-top: 1rem;
 }
 
 h2 {
