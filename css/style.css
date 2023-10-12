@@ -9,7 +9,6 @@
   margin-top: 4rem;
   width: 85%;
 }
-
 @media only screen and (min-width: 768px) {
   .main {
     width: 75%;
@@ -98,10 +97,17 @@ h2 {
     max-width: 700px;
 }
 .static-footer-img {
-  position: fixed;
-  bottom: 50px;
-  right: 50px;
-  width: 150px;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 100px;
+}
+@media only screen and (min-width: 768px) {
+    .static-footer-img {
+        bottom: 50px;
+        right: 50px;
+        width: 150px;
+    }
 }
 
 /* space between paragraphs */
