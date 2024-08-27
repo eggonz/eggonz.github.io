@@ -278,3 +278,15 @@ li p {
     transform: scale(1.1);
     transition: 0.3s ease;
 }
+
+/*dummy*/
+.dummy {
+    background-color: #f0f0f0; /* default background color */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px; /* Some padding */
+    margin: 10px; /* Some margin */
+}
+
+.dummy h2 {
+    font-weight: bold; /* Bold title */
+}

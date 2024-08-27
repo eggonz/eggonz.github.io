@@ -1,0 +1,19 @@
+{
+    "data": [
+        {
+            "title": "Title 1",
+            "text": "This is the text for Title 1",
+            "color": "#ff0000"
+        },
+        {
+            "title": "Title 2",
+            "text": "This is the text for Title 2",
+            "color": "#00ff00"
+        },
+        {
+            "title": "Title 3",
+            "text": "This is the text for Title 3",
+            "color": "#0000ff"
+        }
+    ]
+}

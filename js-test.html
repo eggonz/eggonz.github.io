@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>js test</title>
+        <link rel="icon" type="image/x-icon" href="assets/turtle.ico">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--https://fontawesome.com/v4/icons/-->
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/dummy.js"></script>
+    </head>
+    <body>
+        <div class="min-h-screen flex flex-col bg-gray-100 items-center">
+            <!-- Header -->
+            <div class="navbar px-4 py-2 flex flex-row justify-between items-center bg-white">
+                <div class="py-2">
+                    <h1 class="text-2xl font-semibold"><a href="/">eggonz</a>/<a href="">js-test</a></h1>
+                </div>
+            </div>
+            <!-- Content -->
+            <div id="content" class="main w-3/4 p-4 flex flex-col text-justify bg-gray-100">
+                <!-- Content will be populated here -->
+            </div>
+        </div>
+        <script>
+            populateElementWithJsonData('assets/dummy.json', 'content');
+        </script>
+    </body>
+</html>
+    
