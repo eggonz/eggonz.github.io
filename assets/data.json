@@ -1,0 +1,83 @@
+{
+  "elements": {
+    "icons": {
+      "uva": "assets/uva_logo.png",
+      "ehu": "assets/ehu_logo.png"
+    },
+    "buttons": {
+      "github": {
+        "icon": "fab fa-github",
+        "text": "GitHub",
+        "href": "https://github.com/eggonz"
+      },
+      "linkedin": {
+        "icon": "fab fa-linkedin",
+        "text": "LinkedIn",
+        "href": "https://www.linkedin.com/in/eggonz/"
+      },
+      "bagel-repo": {
+        "icon": "fas fa-code",
+        "text": "repo",
+        "href": "https://github.com/eggonz/unckacking-the-bagel"
+      },
+      "bagel-report": {
+        "icon": "fas fa-file-alt",
+        "text": "report",
+        "href": "https://google.com"
+      }
+    }
+  },
+  "data": {
+    "name": "Egoitz Gonzalez",
+    "intro": {
+      "pfp": "assets/profile.png",
+      "about": "I am a software engineer with a passion for building products that make a difference.",
+      "social": [
+        "github",
+        "linkedin"
+      ]
+    },
+    "education": [
+      {
+        "title": "MSc AI",
+        "company": "UvA",
+        "city": "Amsterdam",
+        "country": "NL",
+        "start": "2022",
+        "end": "Present",
+        "hiddenIcon": "uva",
+        "description": "Focus on Deep Learning and Computer Vision"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Teaching Assistant",
+        "company": "UvA",
+        "city": "Amsterdam",
+        "country": "NL",
+        "start": "2023",
+        "end": "2023",
+        "description": "Computer Vision 1 course"
+      }
+    ],
+    "projects": [
+      {
+        "title": "Project 1",
+        "hiddenIcon": "uva",
+        "buttons": [
+          "bagel-repo",
+          "bagel-report"
+        ],
+        "description": "Project 1 description",
+        "preview": "assets/preview_bagel.png"
+      }
+    ],
+    "miniProjects": [
+      {
+        "title": "cardumen",
+        "preview": "assets/cardumen_preview.png",
+        "href": "https://github.eggonz.io/cardumen"
+      }
+    ]
+  }
+}
