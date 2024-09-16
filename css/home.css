@@ -35,6 +35,8 @@
 
 #content {
   margin-top: var(--header-height);  /* push content below header */
+  margin-left: 250px;
+  margin-right: 250px;
   padding: 10px;
 }
 
@@ -63,7 +65,7 @@
 }
 
 #intro #pfp-container {
-  flex: 0 0 30%;  /* fixed width */
+  flex: 0 0 25%;  /* fixed width */
 
   border: 1px solid red;
   border-radius: 5px;
@@ -78,10 +80,17 @@
   margin: 1px;
 }
 
-#pfp-container img {
+#pfp-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+#pfp-container #pfp {
   width: 100%;
   /*height: 100%;*/
-  object-fit: cover; /* This will ensure that the aspect ratio of the image is maintained */
+  object-fit: cover;
 
   margin: auto;
   border-radius: 50%;
@@ -101,6 +110,28 @@
   gap: 10px;
 }
 
-#social {
+#about p {
+  text-align: justify;
+}
 
+#social {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  gap: 10px;
+
+  border: 1px solid red;
+  border-radius: 5px;
+  margin: 1px;
+  padding: 1px;
+}
+
+.btn {
+  padding: 2px;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: white;
+  background-color: teal;
 }

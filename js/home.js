@@ -67,9 +67,7 @@ async function fillContent() {
     about.appendChild(aboutText);
 
     // set social media
-    let socialMedia = document.getElementById('social');
-    let socialMediaArray = createSocialMediaArray();
-    socialMedia.appendChild(socialMediaArray);
+    fillSocialMedia('social');
 }
 
 function formatMarkdown(markdownText) {
@@ -85,24 +83,26 @@ function formatMarkdown(markdownText) {
     return div;
 }
 
-function createSocialMediaArray() {
+function fillSocialMedia(elementId) {
     // TODO
-    let div = document.createElement('div');
+    let div = document.getElementById(elementId);
     let count = 4;
 
     for (let i = 0; i < count; i++) {
-        let socialMedia = document.createElement('a');
-        socialMedia.href = 'https://www.google.com';
-        socialMedia.target = '_blank';
-        socialMedia.innerText = 'Social Media ' + i;
-        socialMedia.style.margin = '5px';
-        socialMedia.style.padding = '5px';
-        socialMedia.style.border = '1px solid black';
-        socialMedia.style.borderRadius = '5px';
-        socialMedia.style.backgroundColor = 'teal';
-        socialMedia.style.color = 'white';
-
-        div.appendChild(socialMedia);
+        let s = createButton('Social Media ' + i, 'https://www.google.com');
+        div.appendChild(s);
     }
     return div;
+}
+
+function createButton(text, href) {
+    let div = document.createElement('div');
+    div.className = 'btn';
+    div.innerText = text;
+    let lnk = document.createElement('a');
+    lnk.href = href;
+    lnk.target = '_blank';
+    lnk.rel = 'noopener noreferrer';
+    lnk.appendChild(div);
+    return lnk;
 }
